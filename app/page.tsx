@@ -6,7 +6,6 @@ import { Destinations } from '@/components/site/destinations';
 import { EditorialBanner } from '@/components/site/editorial-banner';
 import { Experiences } from '@/components/site/experiences';
 import { Footer } from '@/components/site/footer';
-import { Gallery } from '@/components/site/gallery';
 import { HowItWorks } from '@/components/site/how-it-works';
 import { PlanningCta } from '@/components/site/planning-cta';
 import { Stats } from '@/components/site/stats';
@@ -49,7 +48,7 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,59,74,0.78),rgba(18,59,74,0.18)_58%,rgba(18,59,74,0.38)),linear-gradient(0deg,rgba(18,59,74,0.76),rgba(18,59,74,0.04)_45%)]" />
-        <div className="site-container relative z-10 grid gap-10 lg:grid-cols-[minmax(0,760px)_1fr] lg:items-end">
+        <div className="site-container relative z-10 grid -translate-y-6 gap-10 sm:-translate-y-8 lg:-translate-y-10 lg:grid-cols-[minmax(0,760px)_1fr] lg:items-end">
           <div className="reveal-up">
             <p className="eyebrow mb-6 text-[#D9C5A5]">
               Jornadas selecionadas pelo mundo
@@ -83,7 +82,6 @@ export default function Home() {
       <HowItWorks />
       <Testimonials />
       <TravelJournal />
-      <Gallery />
       <PlanningCta />
       <TripRequestForm />
       <Footer />
