@@ -308,6 +308,22 @@ export const testimonials = [
     image:
       'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=82',
   },
+  {
+    quote:
+      'Tudo tinha o nosso ritmo. Da escolha do hotel às reservas, parecia que a viagem tinha sido desenhada com uma precisão muito humana.',
+    name: 'Camila & André',
+    trip: 'Portugal - Primavera de 2026',
+    image:
+      'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=82',
+  },
+  {
+    quote:
+      'Foi a primeira vez que viajamos em família sem sentir que estávamos administrando a viagem. Só vivemos cada lugar com calma.',
+    name: 'Família Martins',
+    trip: 'Grécia - Verão de 2026',
+    image:
+      'https://images.unsplash.com/photo-1503152394-c571994fd383?auto=format&fit=crop&w=900&q=82',
+  },
 ];
 
 export const journal = [
