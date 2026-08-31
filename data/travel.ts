@@ -34,7 +34,6 @@ export const destinations = [
     country: 'Itália',
     description: 'Refúgios mediterrâneos, vilarejos à beira-mar e elegância atemporal.',
     tag: 'Mediterrâneo',
-    coordinates: '40.6333 N, 14.6029 E',
     image:
       'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85',
   },
@@ -43,7 +42,6 @@ export const destinations = [
     country: 'Grécia',
     description: 'Vilarejos brancos, pores do sol e vistas para o Mar Egeu.',
     tag: 'Romance',
-    coordinates: '36.3932 N, 25.4615 E',
     image:
       'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=85',
   },
@@ -52,7 +50,6 @@ export const destinations = [
     country: 'Indonésia',
     description: 'Paisagens tropicais, bem-estar e descoberta cultural.',
     tag: 'Bem-estar',
-    coordinates: '8.3405 S, 115.0920 E',
     image:
       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85',
   },
@@ -61,7 +58,6 @@ export const destinations = [
     country: 'Argentina & Chile',
     description: 'Paisagens selvagens, montanhas e aventuras inesquecíveis.',
     tag: 'Aventura',
-    coordinates: '50.9423 S, 73.4068 W',
     image:
       'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=85',
   },
@@ -70,7 +66,6 @@ export const destinations = [
     country: 'Japão',
     description: 'Tradições antigas, templos e uma beleza silenciosa.',
     tag: 'Cultura',
-    coordinates: '35.0116 N, 135.7681 E',
     image:
       'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=85',
   },
@@ -79,7 +74,6 @@ export const destinations = [
     country: 'Oceano Índico',
     description: 'Ilhas privativas e horizontes em tons de azul-turquesa.',
     tag: 'Praia',
-    coordinates: '3.2028 N, 73.2207 E',
     image:
       'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85',
   },

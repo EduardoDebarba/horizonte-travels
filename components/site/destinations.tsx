@@ -1,4 +1,4 @@
-import { ArrowUpRight, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 import { destinations } from '@/data/travel';
@@ -44,7 +44,7 @@ export function Destinations() {
                   </span>
                   <span className="text-white/75">0{index + 1}</span>
                 </div>
-                <div className="absolute inset-x-0 bottom-0 p-6">
+                <div className="absolute inset-x-0 bottom-0 p-6 pb-7 sm:pb-8">
                   <div className="mb-4 flex items-center gap-2 text-xs uppercase tracking-[0.12em] text-[#D9C5A5]">
                     <MapPin className="size-3.5" />
                     {destination.country}
@@ -55,15 +55,6 @@ export function Destinations() {
                   <p className="mt-4 min-h-14 text-sm leading-7 text-white/78">
                     {destination.description}
                   </p>
-                  <div className="mt-6 flex items-center justify-between border-t border-white/22 pt-5 text-xs text-white/66">
-                    <span>{destination.coordinates}</span>
-                    <a
-                      className="inline-flex min-h-8 items-center gap-2 font-semibold text-white opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100 focus-visible:opacity-100"
-                      href="#contact"
-                    >
-                      Ver refúgio <ArrowUpRight className="size-4" />
-                    </a>
-                  </div>
                 </div>
               </article>
             </Reveal>
