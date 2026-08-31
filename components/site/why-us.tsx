@@ -19,12 +19,12 @@ export function WhyUs() {
               light
             />
           </Reveal>
-          <div className="grid gap-px bg-white/14 sm:grid-cols-2">
+          <div className="grid sm:grid-cols-2">
             {benefits.map((benefit, index) => {
               const Icon = icons[index];
               return (
-                <Reveal delay={index * 80} key={benefit.title}>
-                  <article className="min-h-64 bg-[#123B4A] p-7 transition-colors duration-300 hover:bg-[#16495b]">
+                <Reveal className="h-full" delay={index * 80} key={benefit.title}>
+                  <article className="h-full min-h-64 border border-white/12 bg-[#123B4A] p-7 transition-colors duration-300 hover:bg-[#16495b]">
                     {Icon ? <Icon className="mb-10 size-7 text-[#D9C5A5]" /> : null}
                     <p className="mb-3 text-sm text-white/50">0{index + 1}</p>
                     <h3 className="font-heading text-[2.05rem] font-medium leading-[1.08]">{benefit.title}</h3>
