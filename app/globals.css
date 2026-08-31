@@ -171,6 +171,30 @@ body {
   .reveal-up {
     animation: reveal-up 0.8s ease both;
   }
+
+  .travel-scrollbar {
+    scrollbar-color: #c56f4d #eee7dc;
+    scrollbar-width: thin;
+  }
+
+  .travel-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .travel-scrollbar::-webkit-scrollbar-track {
+    background: #eee7dc;
+    border-left: 1px solid rgb(217 197 165 / 0.55);
+  }
+
+  .travel-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #d9c5a5, #c56f4d);
+    border: 2px solid #eee7dc;
+    border-radius: 999px;
+  }
+
+  .travel-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #123b4a;
+  }
 }
 
 @keyframes reveal-up {

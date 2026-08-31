@@ -156,7 +156,41 @@ export const journeys = [
     country: 'Itália',
     days: '10 dias',
     route: 'Roma -> Florença -> Toscana -> Costa Amalfitana',
-    price: 'A partir de US$ 4.800',
+    price: 'A partir de R$ 26.900',
+    summary:
+      'Uma jornada elegante por arte, gastronomia, vinhos e litoral mediterrâneo, com tempo livre bem dosado e experiências privativas.',
+    itinerary: [
+      {
+        day: 'Dias 1 e 2',
+        title: 'Roma com acesso privativo',
+        description:
+          'Chegada assistida, hospedagem boutique e passeio guiado por bairros históricos, praças, galerias e mesas clássicas romanas.',
+      },
+      {
+        day: 'Dias 3 e 4',
+        title: 'Florença, arte e ateliers',
+        description:
+          'Trem em primeira classe, visita curada a museus e encontro com artesãos locais para conhecer o lado mais íntimo da cidade.',
+      },
+      {
+        day: 'Dias 5 a 7',
+        title: 'Toscana em ritmo lento',
+        description:
+          'Base em uma villa charmosa, degustações em vinícolas familiares, almoço entre vinhedos e vilarejos medievais no fim da tarde.',
+      },
+      {
+        day: 'Dias 8 a 10',
+        title: 'Costa Amalfitana pelo mar',
+        description:
+          'Traslado panorâmico, passeio de barco privativo, tempo em Positano e Capri, e jantar final com vista para o Mediterrâneo.',
+      },
+    ],
+    includes: [
+      'Hotéis boutique selecionados',
+      'Traslados privativos',
+      'Experiências gastronômicas',
+      'Concierge durante a viagem',
+    ],
     image:
       'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=85',
   },
@@ -165,7 +199,35 @@ export const journeys = [
     country: 'Grécia',
     days: '8 dias',
     route: 'Atenas -> Mykonos -> Santorini',
-    price: 'A partir de US$ 4.200',
+    price: 'A partir de R$ 23.500',
+    summary:
+      'Um roteiro solar entre história, praias, vilas brancas e pores do sol no Egeu, desenhado para descanso com curadoria.',
+    itinerary: [
+      {
+        day: 'Dias 1 e 2',
+        title: 'Atenas histórica e contemporânea',
+        description:
+          'Recepção no aeroporto, hotel central e visita guiada pela Acrópole, seguida por jantar em um endereço autoral da cidade.',
+      },
+      {
+        day: 'Dias 3 a 5',
+        title: 'Mykonos com tempo de mar',
+        description:
+          'Travessia organizada, beach clubs selecionados, praias mais tranquilas e uma tarde livre para explorar vielas e boutiques.',
+      },
+      {
+        day: 'Dias 6 a 8',
+        title: 'Santorini no pôr do sol',
+        description:
+          'Hospedagem com vista para a caldeira, degustação de vinhos vulcânicos e navegação privativa ao entardecer.',
+      },
+    ],
+    includes: [
+      'Hotéis com localização especial',
+      'Ferries ou voos internos organizados',
+      'Passeio de barco privativo',
+      'Reservas em restaurantes selecionados',
+    ],
     image:
       'https://images.unsplash.com/photo-1503152394-c571994fd383?auto=format&fit=crop&w=1200&q=85',
   },
@@ -174,7 +236,41 @@ export const journeys = [
     country: 'Argentina & Chile',
     days: '12 dias',
     route: 'Buenos Aires -> El Calafate -> Torres del Paine',
-    price: 'A partir de US$ 5.600',
+    price: 'A partir de R$ 31.800',
+    summary:
+      'Uma travessia de natureza intensa com logística cuidada, hospedagens confortáveis e experiências guiadas por paisagens monumentais.',
+    itinerary: [
+      {
+        day: 'Dias 1 e 2',
+        title: 'Buenos Aires antes do extremo sul',
+        description:
+          'Chegada assistida, hospedagem em bairro charmoso, jantar reservado e passeio cultural por arquitetura, cafés e livrarias.',
+      },
+      {
+        day: 'Dias 3 a 6',
+        title: 'El Calafate e glaciares',
+        description:
+          'Voos internos, visita ao Perito Moreno, navegação entre glaciares e tempo para contemplar a imensidão patagônica.',
+      },
+      {
+        day: 'Dias 7 a 11',
+        title: 'Torres del Paine com guias locais',
+        description:
+          'Travessia para o Chile, lodge de natureza, caminhadas ajustadas ao seu ritmo, lagos turquesa e mirantes cinematográficos.',
+      },
+      {
+        day: 'Dia 12',
+        title: 'Retorno assistido',
+        description:
+          'Traslado coordenado e conexão de volta com suporte da equipe para que a logística permaneça leve até o último trecho.',
+      },
+    ],
+    includes: [
+      'Lodges e hotéis de experiência',
+      'Guias especializados',
+      'Traslados entre Argentina e Chile',
+      'Suporte remoto durante todo o roteiro',
+    ],
     image:
       'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=1200&q=85',
   },
