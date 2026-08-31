@@ -1,20 +1,23 @@
 export const brand = {
-  name: 'Voyara',
-  tagline: 'Travel beyond the ordinary.',
+  name: 'Horizonte Viagens',
+  tagline: 'Viagens além do comum.',
+  logo: '/logo-horizonte-viagens.png',
+  email: 'contato@horizonteviagens.com.br',
+  url: 'https://horizonteviagens.com.br',
+  socialHandle: '@horizonte.viagens',
 };
 
 export const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Destinations', href: '#destinations' },
-  { label: 'Experiences', href: '#experiences' },
-  { label: 'About', href: '#about' },
-  { label: 'Journal', href: '#journal' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Início', href: '#home' },
+  { label: 'Destinos', href: '#destinations' },
+  { label: 'Experiências', href: '#experiences' },
+  { label: 'Sobre', href: '#about' },
+  { label: 'Revista', href: '#journal' },
+  { label: 'Contato', href: '#contact' },
 ];
 
 export const images = {
-  hero:
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=88',
+  hero: '/hero-horizonte.png',
   aboutPrimary:
     'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=86',
   aboutSecondary:
@@ -27,18 +30,18 @@ export const images = {
 
 export const destinations = [
   {
-    name: 'Amalfi Coast',
-    country: 'Italy',
-    description: 'Mediterranean escapes, seaside villages and timeless elegance.',
-    tag: 'Mediterranean',
+    name: 'Costa Amalfitana',
+    country: 'Itália',
+    description: 'Refúgios mediterrâneos, vilarejos à beira-mar e elegância atemporal.',
+    tag: 'Mediterrâneo',
     coordinates: '40.6333 N, 14.6029 E',
     image:
       'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85',
   },
   {
     name: 'Santorini',
-    country: 'Greece',
-    description: 'Whitewashed villages, sunsets and Aegean views.',
+    country: 'Grécia',
+    description: 'Vilarejos brancos, pores do sol e vistas para o Mar Egeu.',
     tag: 'Romance',
     coordinates: '36.3932 N, 25.4615 E',
     image:
@@ -46,36 +49,36 @@ export const destinations = [
   },
   {
     name: 'Bali',
-    country: 'Indonesia',
-    description: 'Tropical landscapes, wellness and cultural discovery.',
-    tag: 'Wellness',
+    country: 'Indonésia',
+    description: 'Paisagens tropicais, bem-estar e descoberta cultural.',
+    tag: 'Bem-estar',
     coordinates: '8.3405 S, 115.0920 E',
     image:
       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    name: 'Patagonia',
+    name: 'Patagônia',
     country: 'Argentina & Chile',
-    description: 'Wild landscapes, mountains and unforgettable adventures.',
-    tag: 'Adventure',
+    description: 'Paisagens selvagens, montanhas e aventuras inesquecíveis.',
+    tag: 'Aventura',
     coordinates: '50.9423 S, 73.4068 W',
     image:
       'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    name: 'Kyoto',
-    country: 'Japan',
-    description: 'Ancient traditions, temples and quiet beauty.',
-    tag: 'Culture',
+    name: 'Quioto',
+    country: 'Japão',
+    description: 'Tradições antigas, templos e uma beleza silenciosa.',
+    tag: 'Cultura',
     coordinates: '35.0116 N, 135.7681 E',
     image:
       'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    name: 'Maldives',
-    country: 'Indian Ocean',
-    description: 'Private islands and turquoise horizons.',
-    tag: 'Beach',
+    name: 'Maldivas',
+    country: 'Oceano Índico',
+    description: 'Ilhas privativas e horizontes em tons de azul-turquesa.',
+    tag: 'Praia',
     coordinates: '3.2028 N, 73.2207 E',
     image:
       'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85',
@@ -84,50 +87,50 @@ export const destinations = [
 
 export const experiences = [
   {
-    name: 'Wild Adventures',
-    description: 'Travel deeper into mountains, deserts and untouched landscapes.',
+    name: 'Aventuras Selvagens',
+    description: 'Viaje mais fundo por montanhas, desertos e paisagens intocadas.',
     image:
       'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    name: 'Romantic Escapes',
-    description: 'Private stays, unforgettable sunsets and time created for two.',
+    name: 'Escapadas Românticas',
+    description: 'Estadias privativas, pores do sol inesquecíveis e tempo criado para dois.',
     image:
       'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    name: 'Culinary Journeys',
-    description: 'Taste your way through local markets, vineyards and unforgettable tables.',
+    name: 'Jornadas Gastronômicas',
+    description: 'Descubra mercados locais, vinhedos e mesas impossíveis de esquecer.',
     image:
       'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    name: 'Wellness Retreats',
-    description: 'Restorative landscapes, considered rituals and slower days.',
+    name: 'Retiros de Bem-Estar',
+    description: 'Paisagens restauradoras, rituais cuidadosos e dias em ritmo mais lento.',
     image:
       'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    name: 'Beach Escapes',
-    description: 'Barefoot luxury, private coves and blue horizons.',
+    name: 'Refúgios de Praia',
+    description: 'Luxo pé na areia, enseadas privativas e horizontes azuis.',
     image:
       'https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    name: 'Cultural Discovery',
-    description: 'Temples, ateliers, neighborhood rituals and stories told locally.',
+    name: 'Descoberta Cultural',
+    description: 'Templos, ateliês, rituais de bairro e histórias contadas por quem vive ali.',
     image:
       'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    name: 'Wildlife',
-    description: 'Sensitive encounters with rare landscapes and remarkable species.',
+    name: 'Vida Selvagem',
+    description: 'Encontros sensíveis com paisagens raras e espécies extraordinárias.',
     image:
       'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    name: 'Family',
-    description: 'Thoughtfully paced adventures made easy for every generation.',
+    name: 'Família',
+    description: 'Aventuras em ritmo cuidadoso, pensadas para todas as gerações.',
     image:
       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=84',
   },
@@ -135,90 +138,90 @@ export const experiences = [
 
 export const benefits = [
   {
-    title: 'Tailor-Made Journeys',
+    title: 'Jornadas Sob Medida',
     description:
-      'Every itinerary is created around your interests, travel style and rhythm.',
+      'Cada roteiro é criado ao redor dos seus interesses, estilo de viagem e ritmo.',
   },
   {
-    title: 'Handpicked Experiences',
-    description: 'Hotels, restaurants and experiences selected with care.',
+    title: 'Experiências Selecionadas',
+    description: 'Hotéis, restaurantes e experiências escolhidos com atenção.',
   },
   {
-    title: 'Local Expertise',
-    description: 'Discover places through people who truly know them.',
+    title: 'Conhecimento Local',
+    description: 'Descubra lugares por meio de pessoas que realmente os conhecem.',
   },
   {
-    title: 'Support Along the Way',
-    description: 'Personal assistance before, during and after your journey.',
+    title: 'Suporte em Toda a Jornada',
+    description: 'Assistência pessoal antes, durante e depois da sua viagem.',
   },
 ];
 
 export const journeys = [
   {
-    title: 'Italian Summer',
-    country: 'Italy',
-    days: '10 Days',
-    route: 'Rome -> Florence -> Tuscany -> Amalfi Coast',
-    price: 'Starting from $4,800',
+    title: 'Verão Italiano',
+    country: 'Itália',
+    days: '10 dias',
+    route: 'Roma -> Florença -> Toscana -> Costa Amalfitana',
+    price: 'A partir de US$ 4.800',
     image:
       'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    title: 'Greek Islands',
-    country: 'Greece',
-    days: '8 Days',
-    route: 'Athens -> Mykonos -> Santorini',
-    price: 'Starting from $4,200',
+    title: 'Ilhas Gregas',
+    country: 'Grécia',
+    days: '8 dias',
+    route: 'Atenas -> Mykonos -> Santorini',
+    price: 'A partir de US$ 4.200',
     image:
       'https://images.unsplash.com/photo-1503152394-c571994fd383?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    title: 'Wild Patagonia',
+    title: 'Patagônia Selvagem',
     country: 'Argentina & Chile',
-    days: '12 Days',
+    days: '12 dias',
     route: 'Buenos Aires -> El Calafate -> Torres del Paine',
-    price: 'Starting from $5,600',
+    price: 'A partir de US$ 5.600',
     image:
       'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=1200&q=85',
   },
 ];
 
 export const stats = [
-  { value: 35, suffix: '+', label: 'Destinations' },
-  { value: 12, suffix: ' Years', label: 'Designing journeys' },
-  { value: 2500, suffix: '+', label: 'Travelers' },
-  { value: 98, suffix: '%', label: 'Would travel with us again' },
+  { value: 35, suffix: '+', label: 'Destinos' },
+  { value: 12, suffix: ' anos', label: 'Desenhando jornadas' },
+  { value: 2500, suffix: '+', label: 'Viajantes' },
+  { value: 98, suffix: '%', label: 'Viajariam conosco novamente' },
 ];
 
 export const processSteps = [
-  'Tell us what inspires you.',
-  'We design your journey.',
-  'Together, we refine every detail.',
-  'Pack your bags and explore.',
+  'Conte o que inspira você.',
+  'Nós desenhamos sua jornada.',
+  'Juntos, refinamos cada detalhe.',
+  'Arrume as malas e explore.',
 ];
 
 export const testimonials = [
   {
     quote:
-      'Every detail felt effortless. We experienced places we would never have discovered on our own.',
+      'Cada detalhe pareceu simples. Vivemos lugares que jamais teríamos descoberto por conta própria.',
     name: 'Emma & Daniel',
-    trip: 'Italy - Summer 2026',
+    trip: 'Itália - Verão de 2026',
     image:
       'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=82',
   },
   {
     quote:
-      'Voyara understood exactly how we wanted the trip to feel: private, slow, beautiful and full of surprises.',
+      'A Horizonte Viagens entendeu exatamente como queríamos que a viagem se sentisse: privada, calma, bonita e cheia de surpresas.',
     name: 'Marina Costa',
-    trip: 'Japan - Spring 2026',
+    trip: 'Japão - Primavera de 2026',
     image:
       'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=900&q=82',
   },
   {
     quote:
-      'The Patagonia itinerary was ambitious without ever feeling rushed. We felt cared for from the first call.',
-    name: 'Lucas & Rene',
-    trip: 'Patagonia - Autumn 2026',
+      'O roteiro pela Patagônia foi ambicioso sem nunca parecer apressado. Nos sentimos cuidados desde a primeira conversa.',
+    name: 'Lucas & Renê',
+    trip: 'Patagônia - Outono de 2026',
     image:
       'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=82',
   },
@@ -226,23 +229,23 @@ export const testimonials = [
 
 export const journal = [
   {
-    title: '10 Hidden Places Along the Italian Coast',
-    category: 'Italy',
-    readTime: '8 min read',
+    title: '10 Lugares Escondidos Pela Costa Italiana',
+    category: 'Itália',
+    readTime: '8 min de leitura',
     image:
       'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    title: 'When to Visit Japan',
-    category: 'Japan',
-    readTime: '6 min read',
+    title: 'Quando Visitar o Japão',
+    category: 'Japão',
+    readTime: '6 min de leitura',
     image:
       'https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1000&q=84',
   },
   {
-    title: 'A Guide to Slow Travel in Portugal',
+    title: 'Um Guia Para Viajar Devagar em Portugal',
     category: 'Portugal',
-    readTime: '7 min read',
+    readTime: '7 min de leitura',
     image:
       'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1000&q=84',
   },
@@ -250,32 +253,32 @@ export const journal = [
 
 export const gallery = [
   {
-    alt: 'Aerial view of a turquoise tropical beach',
+    alt: 'Vista aérea de uma praia tropical azul-turquesa',
     image:
       'https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=900&q=82',
   },
   {
-    alt: 'Snow covered mountain valley at sunrise',
+    alt: 'Vale de montanhas cobertas de neve ao nascer do sol',
     image:
       'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=82',
   },
   {
-    alt: 'Historic European canal at golden hour',
+    alt: 'Canal europeu histórico na hora dourada',
     image:
       'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=82',
   },
   {
-    alt: 'Boutique hotel terrace facing the sea',
+    alt: 'Terraço de hotel boutique voltado para o mar',
     image:
       'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=82',
   },
   {
-    alt: 'Elegant travel dining experience',
+    alt: 'Experiência gastronômica elegante durante uma viagem',
     image:
       'https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&w=900&q=82',
   },
   {
-    alt: 'Lush tropical landscape in Bali',
+    alt: 'Paisagem tropical exuberante em Bali',
     image:
       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=82',
   },

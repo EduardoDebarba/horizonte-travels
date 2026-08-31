@@ -11,9 +11,9 @@ export function CuratedTrips() {
       <div className="site-container">
         <Reveal>
           <SectionHeading
-            label="Curated journeys"
-            title="Start with a little inspiration."
-            text="Signature routes for travelers who want a refined beginning and the freedom to make every detail personal."
+            label="Jornadas selecionadas"
+            title="Comece com um pouco de inspiração."
+            text="Rotas autorais para viajantes que querem um início refinado e liberdade para tornar cada detalhe pessoal."
           />
         </Reveal>
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
@@ -39,7 +39,7 @@ export function CuratedTrips() {
                       {journey.days}
                     </span>
                   </div>
-                  <h3 className="font-heading text-5xl font-medium text-[#123B4A]">
+                  <h3 className="font-heading text-[clamp(2rem,7vw,2.65rem)] font-medium leading-[1.06] text-[#123B4A]">
                     {journey.title}
                   </h3>
                   <p className="mt-5 flex items-start gap-3 text-sm leading-7 text-[#4F5A59]">
@@ -52,7 +52,7 @@ export function CuratedTrips() {
                       className="inline-flex min-h-8 items-center gap-2 text-sm font-semibold text-[#C56F4D] transition-transform hover:translate-x-1"
                       href="#contact"
                     >
-                      View Journey <ArrowUpRight className="size-4" />
+                      Ver Jornada <ArrowUpRight className="size-4" />
                     </a>
                   </div>
                 </div>

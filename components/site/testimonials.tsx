@@ -23,9 +23,9 @@ export function Testimonials() {
         <Reveal>
           <div className="mb-14 flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
             <div>
-              <p className="eyebrow mb-4 text-[#C56F4D]">Testimonials</p>
-              <h2 className="font-heading text-[clamp(3rem,6.5vw,6.8rem)] font-medium leading-[0.92] text-[#123B4A]">
-                Stories from the road.
+              <p className="eyebrow mb-4 text-[#C56F4D]">Depoimentos</p>
+              <h2 className="font-heading text-[clamp(2.15rem,3.9vw,4.05rem)] font-medium leading-[1.06] text-[#123B4A]">
+                Histórias da estrada.
               </h2>
             </div>
             <div className="flex gap-3">
@@ -33,7 +33,7 @@ export function Testimonials() {
                 className="inline-flex size-12 items-center justify-center rounded-md border border-[#123B4A]/25 text-[#123B4A] transition-colors hover:bg-[#123B4A] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C56F4D]"
                 type="button"
                 onClick={() => goTo(-1)}
-                aria-label="Previous testimonial"
+                aria-label="Depoimento anterior"
               >
                 <ArrowLeft className="size-4" />
               </button>
@@ -41,7 +41,7 @@ export function Testimonials() {
                 className="inline-flex size-12 items-center justify-center rounded-md border border-[#123B4A]/25 text-[#123B4A] transition-colors hover:bg-[#123B4A] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C56F4D]"
                 type="button"
                 onClick={() => goTo(1)}
-                aria-label="Next testimonial"
+                aria-label="Próximo depoimento"
               >
                 <ArrowRight className="size-4" />
               </button>
@@ -72,7 +72,7 @@ export function Testimonials() {
               ) : null}
             </div>
             <div className="flex flex-col justify-between p-7 sm:p-10 lg:p-14">
-              <p className="font-heading text-[clamp(2.4rem,5vw,5.8rem)] font-medium leading-[0.98] text-[#123B4A]">
+              <p className="font-heading text-[clamp(1.75rem,3vw,3.15rem)] font-medium leading-[1.14] text-[#123B4A]">
                 &ldquo;{current?.quote}&rdquo;
               </p>
               <div className="mt-10 flex flex-col justify-between gap-8 border-t border-[#D9C5A5] pt-6 sm:flex-row sm:items-end">
@@ -90,7 +90,7 @@ export function Testimonials() {
                       )}
                       type="button"
                       onClick={() => setActive(index)}
-                      aria-label={`Show testimonial ${index + 1}`}
+                      aria-label={`Mostrar depoimento ${index + 1}`}
                     >
                       <span
                         className={cn(

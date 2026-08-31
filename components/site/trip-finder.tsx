@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 import { ActionButton } from './action-button';
 
-const experiences = ['Beach Escape', 'Culture', 'Adventure', 'Romance', 'Wellness'];
+const experiences = ['Refúgio de Praia', 'Cultura', 'Aventura', 'Romance', 'Bem-estar'];
 
 export function TripFinder() {
   const [message, setMessage] = useState('');
@@ -18,9 +18,9 @@ export function TripFinder() {
     const destination =
       typeof destinationValue === 'string' && destinationValue.trim()
         ? destinationValue.trim()
-        : 'your dream destination';
+        : 'seu destino dos sonhos';
     setMessage(
-      `Beautiful choice. ${destination} is ready for a curated journey proposal.`,
+      `Excelente escolha. ${destination} está pronto para uma proposta de jornada personalizada.`,
     );
   }
 
@@ -28,32 +28,32 @@ export function TripFinder() {
     <form
       className="site-container relative z-20 -mt-16 grid gap-5 rounded-md border border-white/45 bg-[#FFFDF7]/94 p-4 shadow-[0_28px_90px_rgb(18_59_74/18%)] backdrop-blur-md md:grid-cols-[1.1fr_1fr_0.8fr_1fr_auto] md:items-end md:p-5"
       onSubmit={handleSubmit}
-      aria-label="Find a curated trip"
+      aria-label="Encontrar uma viagem personalizada"
     >
-      <TripField icon={<MapPin className="size-4" />} label="Destination">
+      <TripField icon={<MapPin className="size-4" />} label="Destino">
         <input
           className="w-full bg-transparent text-sm text-[#1D2528] outline-none placeholder:text-[#6E7473]"
           name="destination"
-          placeholder="Amalfi Coast"
+          placeholder="Costa Amalfitana"
         />
       </TripField>
-      <TripField icon={<Calendar className="size-4" />} label="Travel Date">
+      <TripField icon={<Calendar className="size-4" />} label="Data da Viagem">
         <input
           className="w-full bg-transparent text-sm text-[#1D2528] outline-none"
           name="date"
           type="date"
         />
       </TripField>
-      <TripField icon={<Users className="size-4" />} label="Travelers">
+      <TripField icon={<Users className="size-4" />} label="Viajantes">
         <select className="w-full bg-transparent text-sm outline-none" name="travelers">
-          <option>2 Travelers</option>
-          <option>Solo Traveler</option>
-          <option>3-4 Travelers</option>
-          <option>Family</option>
-          <option>Private Group</option>
+          <option>2 viajantes</option>
+          <option>Viajante solo</option>
+          <option>3-4 viajantes</option>
+          <option>Família</option>
+          <option>Grupo privativo</option>
         </select>
       </TripField>
-      <TripField icon={<Sparkles className="size-4" />} label="Experience">
+      <TripField icon={<Sparkles className="size-4" />} label="Experiência">
         <select className="w-full bg-transparent text-sm outline-none" name="experience">
           {experiences.map((experience) => (
             <option key={experience}>{experience}</option>
@@ -62,7 +62,7 @@ export function TripFinder() {
       </TripField>
       <ActionButton className="w-full md:w-auto" type="submit" variant="secondary">
         <Search className="size-4" />
-        Explore Trips
+        Explorar Viagens
       </ActionButton>
       <p
         aria-live="polite"

@@ -3,18 +3,19 @@
 import { CheckCircle2, Send, XCircle } from 'lucide-react';
 import { useState } from 'react';
 
+import { brand } from '@/data/travel';
 import { ActionButton } from './action-button';
 import { Reveal } from './reveal';
 import { SectionHeading } from './section-heading';
 
 const styles = [
-  'Relaxation',
-  'Adventure',
-  'Culture',
+  'Relaxamento',
+  'Aventura',
+  'Cultura',
   'Romance',
-  'Gastronomy',
-  'Family',
-  'Other',
+  'Gastronomia',
+  'Família',
+  'Outro',
 ];
 
 const requiredFields = ['name', 'email', 'destination', 'travelers', 'budget', 'style'];
@@ -34,14 +35,14 @@ export function TripRequestForm() {
 
     if (missing) {
       setStatus('error');
-      setError('Please complete the essential trip details before sending.');
+      setError('Preencha os detalhes essenciais da viagem antes de enviar.');
       return;
     }
 
     const email = form.get('email');
     if (typeof email !== 'string' || !/^\S+@\S+\.\S+$/.test(email)) {
       setStatus('error');
-      setError('Please add a valid email address.');
+      setError('Informe um endereço de e-mail válido.');
       return;
     }
 
@@ -59,13 +60,13 @@ export function TripRequestForm() {
       <div className="site-container grid gap-12 lg:grid-cols-[0.78fr_1.22fr]">
         <Reveal>
           <SectionHeading
-            label="Plan your journey"
-            title="Tell us about your dream trip."
-            text="Share the first pieces of the journey you are imagining. Our travel designers will shape the rest with care."
+            label="Planeje sua jornada"
+            title="Conte sobre a viagem dos seus sonhos."
+            text="Compartilhe os primeiros detalhes da jornada que você imagina. Nossos designers de viagem moldarão o restante com cuidado."
           />
           <div className="mt-10 border-t border-[#D9C5A5] pt-6 text-sm leading-7 text-[#6E7473]">
-            <p className="font-semibold text-[#123B4A]">hello@voyara.travel</p>
-            <p>Private consultations available worldwide.</p>
+            <p className="font-semibold text-[#123B4A]">{brand.email}</p>
+            <p>Consultorias privativas disponíveis em qualquer lugar do mundo.</p>
           </div>
         </Reveal>
 
@@ -76,16 +77,16 @@ export function TripRequestForm() {
             noValidate
           >
             <div className="grid gap-5 sm:grid-cols-2">
-              <FormField label="Full Name" name="name" placeholder="Your name" required />
-              <FormField label="Email" name="email" placeholder="you@email.com" type="email" required />
-              <FormField label="Phone" name="phone" placeholder="+1 555 000 0000" />
-              <FormField label="Destination" name="destination" placeholder="Portugal, Japan, Patagonia..." required />
-              <FormField label="Travel Dates" name="dates" type="text" placeholder="September 2026" />
-              <FormField label="Number of Travelers" name="travelers" placeholder="2 travelers" required />
-              <FormField label="Estimated Budget" name="budget" placeholder="$5,000 - $8,000" required />
+              <FormField label="Nome Completo" name="name" placeholder="Seu nome" required />
+              <FormField label="E-mail" name="email" placeholder="seu@email.com" type="email" required />
+              <FormField label="Telefone" name="phone" placeholder="+55 11 00000 0000" />
+              <FormField label="Destino" name="destination" placeholder="Portugal, Japão, Patagônia..." required />
+              <FormField label="Datas da Viagem" name="dates" type="text" placeholder="Setembro de 2026" />
+              <FormField label="Número de Viajantes" name="travelers" placeholder="2 viajantes" required />
+              <FormField label="Orçamento Estimado" name="budget" placeholder="US$ 5.000 - US$ 8.000" required />
               <label className="grid gap-2">
                 <span className="text-xs font-bold uppercase tracking-[0.12em] text-[#355C4D]">
-                  Travel Style
+                  Estilo de Viagem
                 </span>
                 <select
                   className="min-h-12 rounded-md border border-[#D9C5A5] bg-white px-4 text-sm text-[#1D2528] outline-none transition focus:border-[#235E6F] focus:ring-2 focus:ring-[#235E6F]/20"
@@ -94,7 +95,7 @@ export function TripRequestForm() {
                   defaultValue=""
                 >
                   <option value="" disabled>
-                    Choose a style
+                    Escolha um estilo
                   </option>
                   {styles.map((style) => (
                     <option key={style}>{style}</option>
@@ -103,12 +104,12 @@ export function TripRequestForm() {
               </label>
               <label className="grid gap-2 sm:col-span-2">
                 <span className="text-xs font-bold uppercase tracking-[0.12em] text-[#355C4D]">
-                  Message
+                  Mensagem
                 </span>
                 <textarea
                   className="min-h-36 rounded-md border border-[#D9C5A5] bg-white px-4 py-3 text-sm text-[#1D2528] outline-none transition focus:border-[#235E6F] focus:ring-2 focus:ring-[#235E6F]/20"
                   name="message"
-                  placeholder="Tell us what would make this trip unforgettable."
+                  placeholder="Conte o que tornaria esta viagem inesquecível."
                 />
               </label>
             </div>
@@ -116,13 +117,13 @@ export function TripRequestForm() {
             <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <ActionButton type="submit" variant="primary">
                 <Send className="size-4" />
-                {status === 'loading' ? 'Planning...' : 'Start Planning'}
+                {status === 'loading' ? 'Planejando...' : 'Começar Planejamento'}
               </ActionButton>
               <p className="min-h-6 text-sm" aria-live="polite">
                 {status === 'success' ? (
                   <span className="inline-flex items-center gap-2 text-[#355C4D]">
                     <CheckCircle2 className="size-4" />
-                    Your request is ready for a travel designer.
+                    Sua solicitação está pronta para um designer de viagem.
                   </span>
                 ) : null}
                 {status === 'error' ? (

@@ -12,16 +12,16 @@ export function Destinations() {
         <div className="grid gap-8 lg:grid-cols-[1fr_0.72fr] lg:items-end">
           <Reveal>
             <SectionHeading
-              label="Explore the world"
-              title="Places worth getting lost in."
-              text="A considered edit of coastlines, cities, islands and wild edges, each ready to become something entirely yours."
+              label="Explore o mundo"
+              title="Lugares onde vale a pena se perder."
+              text="Uma curadoria de litorais, cidades, ilhas e paisagens selvagens, cada uma pronta para se tornar algo inteiramente seu."
             />
           </Reveal>
           <Reveal delay={120}>
             <p className="max-w-md text-sm leading-7 text-[#6E7473] lg:ml-auto">
-              Each destination begins as inspiration and becomes a precise private
-              route, shaped through seasonal intelligence, local access and your
-              personal rhythm.
+              Cada destino começa como inspiração e se transforma em uma rota
+              privativa precisa, guiada por inteligência sazonal, acesso local e
+              o seu ritmo pessoal.
             </p>
           </Reveal>
         </div>
@@ -49,7 +49,7 @@ export function Destinations() {
                     <MapPin className="size-3.5" />
                     {destination.country}
                   </div>
-                  <h3 className="font-heading text-5xl font-medium leading-none">
+                  <h3 className="font-heading text-[clamp(2rem,8vw,2.65rem)] font-medium leading-[1.05]">
                     {destination.name}
                   </h3>
                   <p className="mt-4 min-h-14 text-sm leading-7 text-white/78">
@@ -61,7 +61,7 @@ export function Destinations() {
                       className="inline-flex min-h-8 items-center gap-2 font-semibold text-white opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100 focus-visible:opacity-100"
                       href="#contact"
                     >
-                      View escape <ArrowUpRight className="size-4" />
+                      Ver refúgio <ArrowUpRight className="size-4" />
                     </a>
                   </div>
                 </div>

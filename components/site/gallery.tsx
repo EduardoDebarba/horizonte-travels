@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { gallery } from '@/data/travel';
+import { brand, gallery } from '@/data/travel';
 import { Reveal } from './reveal';
 
 export function Gallery() {
@@ -10,14 +10,14 @@ export function Gallery() {
         <Reveal>
           <div className="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
             <div>
-              <p className="eyebrow mb-4 text-[#C56F4D]">@voyara.travel</p>
-              <h2 className="font-heading text-[clamp(3rem,6vw,6rem)] font-medium leading-none text-[#123B4A]">
-                Postcards from around the world.
+              <p className="eyebrow mb-4 text-[#C56F4D]">{brand.socialHandle}</p>
+              <h2 className="font-heading text-[clamp(2.15rem,3.9vw,4.05rem)] font-medium leading-[1.06] text-[#123B4A]">
+                Cartões-postais pelo mundo.
               </h2>
             </div>
             <p className="max-w-sm text-sm leading-7 text-[#6E7473]">
-              Follow our journey through islands, mountains, markets, hotels and
-              small moments worth crossing oceans for.
+              Acompanhe nossa jornada por ilhas, montanhas, mercados, hotéis e
+              pequenos momentos que fazem valer a travessia de oceanos.
             </p>
           </div>
         </Reveal>
@@ -43,7 +43,7 @@ export function Gallery() {
                   className="object-cover transition-transform duration-700 group-hover:scale-[1.035]"
                 />
                 <figcaption className="absolute inset-0 grid place-items-center bg-[#123B4A]/0 opacity-0 transition-all duration-300 group-hover:bg-[#123B4A]/22 group-hover:opacity-100">
-                  <span className="eyebrow text-white">Voyara</span>
+                  <span className="eyebrow text-white">{brand.name}</span>
                 </figcaption>
               </figure>
             </Reveal>

@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { brand, navLinks } from '@/data/travel';
 import { cn } from '@/lib/utils';
 import { ActionButton } from './action-button';
+import { BrandLogo } from './brand-logo';
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,20 +31,20 @@ export function Header() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-500',
         scrolled || open
-          ? 'border-b border-[#D9C5A5]/50 bg-[#F6F2EA]/88 shadow-[0_16px_40px_rgb(29_37_40/8%)] backdrop-blur-md'
+          ? 'border-b border-white/10 bg-[#123B4A]/92 text-white shadow-[0_16px_40px_rgb(29_37_40/10%)] backdrop-blur-md'
           : 'bg-transparent text-white',
       )}
     >
       <div className="site-container grid h-20 grid-cols-[1fr_auto_1fr] items-center max-lg:flex max-lg:justify-between">
         <a
-          className="font-heading text-3xl font-semibold leading-none"
+          className="inline-flex items-center"
           href="#home"
-          aria-label="Voyara home"
+          aria-label={`Página inicial da ${brand.name}`}
         >
-          {brand.name}
+          <BrandLogo className="w-[154px] sm:w-[178px]" priority />
         </a>
 
-        <nav aria-label="Primary navigation" className="hidden items-center gap-8 lg:flex">
+        <nav aria-label="Navegação principal" className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <a
               className="group relative inline-flex min-h-9 items-center text-[0.78rem] font-semibold uppercase tracking-[0.12em] opacity-90 transition-opacity hover:opacity-100"
@@ -58,7 +59,7 @@ export function Header() {
 
         <div className="hidden justify-end lg:flex">
           <ActionButton href="#contact" variant={scrolled ? 'primary' : 'light'}>
-            Plan Your Trip
+            Planeje Sua Viagem
           </ActionButton>
         </div>
 
@@ -67,7 +68,7 @@ export function Header() {
           type="button"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
-          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-label={open ? 'Fechar menu' : 'Abrir menu'}
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
@@ -80,10 +81,10 @@ export function Header() {
         )}
       >
         <div className="site-container flex h-[calc(100vh-5rem)] flex-col justify-between py-10">
-          <nav className="grid gap-5" aria-label="Mobile navigation">
+          <nav className="grid gap-5" aria-label="Navegação mobile">
             {navLinks.map((link, index) => (
               <a
-                className="font-heading text-[clamp(2.6rem,11vw,5rem)] leading-[0.88] text-white/92 transition-colors hover:text-[#D9C5A5]"
+                className="font-heading text-[clamp(2.15rem,9vw,3.85rem)] leading-[0.98] text-white/92 transition-colors hover:text-[#D9C5A5]"
                 href={link.href}
                 key={link.href}
                 onClick={() => setOpen(false)}
@@ -97,8 +98,8 @@ export function Header() {
           </nav>
           <div className="grid gap-8 border-t border-white/18 pt-7 sm:grid-cols-[1fr_auto] sm:items-end">
             <div className="space-y-3 text-sm text-white/72">
-              <p>hello@voyara.travel</p>
-              <p>Private travel design, worldwide.</p>
+              <p>{brand.email}</p>
+              <p>Desenho de viagens privativas pelo mundo.</p>
               <div className="flex gap-5 pt-2 text-white">
                 {['Instagram', 'Pinterest', 'YouTube'].map((item) => (
                   <a className="inline-flex min-h-8 items-center transition-opacity hover:opacity-70" href="#footer" key={item}>
@@ -108,7 +109,7 @@ export function Header() {
               </div>
             </div>
             <ActionButton href="#contact" variant="light" onClick={() => setOpen(false)}>
-              Plan Your Trip
+              Planeje Sua Viagem
             </ActionButton>
           </div>
         </div>

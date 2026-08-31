@@ -1,6 +1,6 @@
 import { BadgeCheck, Compass, Headphones, Hotel } from 'lucide-react';
 
-import { benefits } from '@/data/travel';
+import { benefits, brand } from '@/data/travel';
 import { Reveal } from './reveal';
 import { SectionHeading } from './section-heading';
 
@@ -13,9 +13,9 @@ export function WhyUs() {
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
             <SectionHeading
-              label="Why Voyara"
-              title="Everything taken care of. Every detail considered."
-              text="Premium travel design means more than beautiful places. It means precision, calm support and the confidence that every moment has been thought through."
+              label={`Por que ${brand.name}`}
+              title="Tudo cuidado. Cada detalhe considerado."
+              text="Design de viagem premium significa mais do que lugares bonitos. Significa precisão, suporte tranquilo e a confiança de que cada momento foi pensado."
               light
             />
           </Reveal>
@@ -27,7 +27,7 @@ export function WhyUs() {
                   <article className="min-h-64 bg-[#123B4A] p-7 transition-colors duration-300 hover:bg-[#16495b]">
                     {Icon ? <Icon className="mb-10 size-7 text-[#D9C5A5]" /> : null}
                     <p className="mb-3 text-sm text-white/50">0{index + 1}</p>
-                    <h3 className="font-heading text-4xl font-medium">{benefit.title}</h3>
+                    <h3 className="font-heading text-[2.05rem] font-medium leading-[1.08]">{benefit.title}</h3>
                     <p className="mt-4 text-sm leading-7 text-white/68">
                       {benefit.description}
                     </p>

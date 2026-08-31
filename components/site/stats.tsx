@@ -56,8 +56,8 @@ function CounterCard({
 
   return (
     <div ref={ref} className="bg-[#EEE7DC] p-8 text-center">
-      <p className="font-heading text-6xl font-medium text-[#123B4A]">
-        {count.toLocaleString('en-US')}
+      <p className="font-heading text-[clamp(2.8rem,4vw,4.25rem)] font-medium leading-none text-[#123B4A]">
+        {count.toLocaleString('pt-BR')}
         {suffix}
       </p>
       <p className="mt-3 text-sm font-semibold uppercase tracking-[0.12em] text-[#6E7473]">

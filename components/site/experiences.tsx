@@ -10,9 +10,9 @@ export function Experiences() {
       <div className="site-container">
         <Reveal>
           <SectionHeading
-            label="Find your experience"
-            title="Travel your way."
-            text="Adventure, romance, culture, wellness or something wonderfully specific. We build the journey around the feeling first."
+            label="Encontre sua experiência"
+            title="Viaje do seu jeito."
+            text="Aventura, romance, cultura, bem-estar ou algo maravilhosamente específico. Construímos a jornada a partir da sensação que você quer viver."
           />
         </Reveal>
         <div className="mt-16 grid auto-rows-[260px] gap-5 md:grid-cols-4 lg:auto-rows-[300px]">
@@ -41,7 +41,7 @@ export function Experiences() {
                   <p className="mb-2 text-xs uppercase tracking-[0.14em] text-[#D9C5A5]">
                     {String(index + 1).padStart(2, '0')}
                   </p>
-                  <h3 className="font-heading text-4xl font-medium leading-none">
+                  <h3 className="font-heading text-[2.05rem] font-medium leading-[1.04]">
                     {experience.name}
                   </h3>
                   <p className="mt-3 max-w-sm text-sm leading-6 text-white/78">

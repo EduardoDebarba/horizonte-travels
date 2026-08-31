@@ -24,9 +24,9 @@ export default function Home() {
     '@type': 'TravelAgency',
     name: brand.name,
     description:
-      'Bespoke journeys, extraordinary destinations and personalized travel experiences.',
-    url: 'https://voyara.travel',
-    email: 'hello@voyara.travel',
+      'Jornadas sob medida, destinos extraordinários e experiências de viagem personalizadas.',
+    url: brand.url,
+    email: brand.email,
   };
 
   return (
@@ -42,7 +42,7 @@ export default function Home() {
       >
         <Image
           src={images.hero}
-          alt="Turquoise coastline with clear water and a quiet beach"
+          alt="Viajante observando uma costa azul-turquesa cercada por montanhas"
           className="absolute inset-0 scale-105 object-cover"
           fill
           priority
@@ -52,28 +52,23 @@ export default function Home() {
         <div className="site-container relative z-10 grid gap-10 lg:grid-cols-[minmax(0,760px)_1fr] lg:items-end">
           <div className="reveal-up">
             <p className="eyebrow mb-6 text-[#D9C5A5]">
-              Curated journeys around the world
+              Jornadas selecionadas pelo mundo
             </p>
-            <h1 className="max-w-4xl font-heading text-[clamp(4rem,10vw,9.4rem)] font-medium leading-[0.86] text-balance">
-              Go where you feel most alive.
+            <h1 className="max-w-3xl font-heading text-[clamp(2.75rem,6.2vw,5.85rem)] font-medium leading-[0.98] text-balance">
+              Vá aonde você se sente mais vivo.
             </h1>
-            <p className="mt-7 max-w-xl text-lg leading-8 text-white/82">
-              Bespoke journeys, extraordinary places and unforgettable
-              experiences designed around you.
+            <p className="mt-7 max-w-xl text-base leading-7 text-white/82 sm:text-[1.05rem] sm:leading-8">
+              Jornadas sob medida, lugares extraordinários e experiências
+              inesquecíveis desenhadas ao seu redor.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <ActionButton href="#contact" variant="secondary">
-                Plan Your Journey
+                Planeje Sua Jornada
               </ActionButton>
               <ActionButton href="#destinations" variant="light">
-                Explore Destinations
+                Explorar Destinos
               </ActionButton>
             </div>
-          </div>
-          <div className="hidden justify-self-end border-l border-white/24 pl-8 text-sm text-white/72 lg:block">
-            <p className="eyebrow mb-4 text-white">Voyara</p>
-            <p>{brand.tagline}</p>
-            <p className="mt-8 [writing-mode:vertical-rl]">Scroll to discover</p>
           </div>
         </div>
       </section>

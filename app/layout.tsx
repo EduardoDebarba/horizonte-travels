@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Cormorant_Garamond, Manrope } from 'next/font/google';
+import { brand } from '@/data/travel';
 import './globals.css';
 
 const manrope = Manrope({
@@ -16,30 +17,30 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://voyara.travel'),
-  title: 'Voyara | Bespoke Travel & Extraordinary Journeys',
+  metadataBase: new URL(brand.url),
+  title: `${brand.name} | Viagens Sob Medida e Jornadas Extraordinárias`,
   description:
-    'Discover tailor-made journeys, extraordinary destinations and unforgettable travel experiences designed around you.',
+    'Descubra jornadas sob medida, destinos extraordinários e experiências de viagem inesquecíveis desenhadas ao seu redor.',
   openGraph: {
-    title: 'Voyara | Bespoke Travel & Extraordinary Journeys',
+    title: `${brand.name} | Viagens Sob Medida e Jornadas Extraordinárias`,
     description:
-      'Bespoke journeys, extraordinary places and unforgettable experiences designed around you.',
-    siteName: 'Voyara',
+      'Jornadas sob medida, lugares extraordinários e experiências inesquecíveis desenhadas ao seu redor.',
+    siteName: brand.name,
     type: 'website',
     images: [
       {
         url: '/og.png',
         width: 1792,
         height: 1024,
-        alt: 'Voyara premium travel coastline preview',
+        alt: `Prévia da ${brand.name} com litoral premium de viagem`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Voyara | Bespoke Travel & Extraordinary Journeys',
+    title: `${brand.name} | Viagens Sob Medida e Jornadas Extraordinárias`,
     description:
-      'Discover tailor-made journeys, extraordinary destinations and unforgettable travel experiences designed around you.',
+      'Descubra jornadas sob medida, destinos extraordinários e experiências de viagem inesquecíveis desenhadas ao seu redor.',
     images: ['/og.png'],
   },
 };
@@ -50,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${manrope.variable} ${cormorant.variable} antialiased`}>
         {children}
       </body>

@@ -9,8 +9,8 @@ export function HowItWorks() {
         <Reveal>
           <SectionHeading
             align="center"
-            label="Your journey"
-            title="From dreaming to departure."
+            label="Sua jornada"
+            title="Do sonho ao embarque."
           />
         </Reveal>
         <div className="relative mt-16 grid gap-5 lg:grid-cols-4">
@@ -18,10 +18,10 @@ export function HowItWorks() {
           {processSteps.map((step, index) => (
             <Reveal delay={index * 90} key={step}>
               <article className="relative bg-[#F6F2EA] px-2 py-4">
-                <div className="mb-8 flex size-24 items-center justify-center rounded-full border border-[#D9C5A5] bg-[#F6F2EA] font-heading text-4xl text-[#C56F4D]">
+                <div className="mb-8 flex size-20 items-center justify-center rounded-full border border-[#D9C5A5] bg-[#F6F2EA] font-heading text-3xl text-[#C56F4D]">
                   {String(index + 1).padStart(2, '0')}
                 </div>
-                <h3 className="max-w-[14rem] font-heading text-4xl font-medium leading-tight text-[#123B4A]">
+                <h3 className="max-w-[14rem] font-heading text-[2.05rem] font-medium leading-[1.12] text-[#123B4A]">
                   {step}
                 </h3>
               </article>

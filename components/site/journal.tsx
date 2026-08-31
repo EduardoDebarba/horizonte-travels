@@ -11,9 +11,9 @@ export function TravelJournal() {
       <div className="site-container">
         <Reveal>
           <SectionHeading
-            label="The journal"
-            title="Stories, places and inspiration."
-            text="A quieter edit of seasonal notes, hidden routes and travel ideas for the next place calling your name."
+            label="A revista"
+            title="Histórias, lugares e inspiração."
+            text="Uma curadoria mais tranquila de notas sazonais, rotas escondidas e ideias de viagem para o próximo lugar que chama por você."
           />
         </Reveal>
         <div className="mt-16 grid gap-6 lg:grid-cols-[1.2fr_0.9fr_0.9fr]">
@@ -40,14 +40,14 @@ export function TravelJournal() {
                   <span className="h-px w-8 bg-[#D9C5A5]" />
                   <span>{article.readTime}</span>
                 </div>
-                <h3 className="mt-4 font-heading text-4xl font-medium leading-tight text-[#123B4A]">
+                <h3 className="mt-4 font-heading text-[2.15rem] font-medium leading-[1.1] text-[#123B4A]">
                   {article.title}
                 </h3>
                 <a
                   className="mt-5 inline-flex min-h-8 items-center gap-2 text-sm font-semibold text-[#C56F4D] transition-transform hover:translate-x-1"
                   href="#contact"
                 >
-                  Read Journal <ArrowUpRight className="size-4" />
+                  Ler Revista <ArrowUpRight className="size-4" />
                 </a>
               </article>
             </Reveal>

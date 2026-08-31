@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { images } from '@/data/travel';
+import { brand, images } from '@/data/travel';
 import { ActionButton } from './action-button';
 import { Reveal } from './reveal';
 
@@ -9,7 +9,7 @@ export function PlanningCta() {
     <section className="relative min-h-[78vh] overflow-hidden bg-[#123B4A] py-28 text-white">
       <Image
         src={images.cta}
-        alt="Aerial view of a remote beach and blue ocean"
+        alt="Vista aérea de uma praia remota e oceano azul"
         fill
         sizes="100vw"
         className="object-cover"
@@ -18,21 +18,21 @@ export function PlanningCta() {
       <div className="site-container relative z-10 flex min-h-[58vh] items-center">
         <Reveal className="max-w-3xl">
           <p className="eyebrow mb-5 text-[#D9C5A5]">
-            Your next journey starts here
+            Sua próxima jornada começa aqui
           </p>
-          <h2 className="font-heading text-[clamp(4rem,9vw,9rem)] font-medium leading-[0.86] text-balance">
-            Where will you go next?
+          <h2 className="max-w-4xl font-heading text-[clamp(2.65rem,5.2vw,5.35rem)] font-medium leading-[1.02] text-balance">
+            Para onde você vai agora?
           </h2>
           <p className="mt-7 max-w-xl text-lg leading-8 text-white/78">
-            Tell us what you are dreaming of and we will turn it into a journey
-            designed just for you.
+            Conte o que você está sonhando e transformaremos isso em uma jornada
+            desenhada especialmente para você.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <ActionButton href="#contact" variant="secondary">
-              Plan Your Trip
+              Planeje Sua Viagem
             </ActionButton>
-            <ActionButton href="mailto:hello@voyara.travel" variant="light">
-              Talk to a Travel Designer
+            <ActionButton href={`mailto:${brand.email}`} variant="light">
+              Fale com um Designer de Viagem
             </ActionButton>
           </div>
         </Reveal>

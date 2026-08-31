@@ -1,19 +1,20 @@
 import { Send } from 'lucide-react';
 
 import { brand } from '@/data/travel';
+import { BrandLogo } from './brand-logo';
 
 const columns = [
   {
-    title: 'Explore',
-    links: ['Destinations', 'Experiences', 'Journeys', 'Journal'],
+    title: 'Explorar',
+    links: ['Destinos', 'Experiências', 'Jornadas', 'Revista'],
   },
   {
-    title: 'Company',
-    links: ['About', 'Contact', 'Careers', 'Partners'],
+    title: 'Empresa',
+    links: ['Sobre', 'Contato', 'Carreiras', 'Parceiros'],
   },
   {
-    title: 'Support',
-    links: ['FAQ', 'Travel Information', 'Privacy', 'Terms'],
+    title: 'Suporte',
+    links: ['FAQ', 'Informações de Viagem', 'Privacidade', 'Termos'],
   },
 ];
 
@@ -23,8 +24,8 @@ export function Footer() {
       <div className="site-container">
         <div className="grid gap-12 border-b border-white/12 pb-12 lg:grid-cols-[1.1fr_1.3fr_1fr]">
           <div>
-            <a className="font-heading text-5xl font-semibold" href="#home">
-              {brand.name}
+            <a className="inline-flex" href="#home" aria-label={`Página inicial da ${brand.name}`}>
+              <BrandLogo className="w-[212px]" />
             </a>
             <p className="mt-4 max-w-xs text-sm leading-7 text-white/62">
               {brand.tagline}
@@ -61,22 +62,22 @@ export function Footer() {
             <label className="grid gap-4">
               <span>
                 <span className="block text-xs font-bold uppercase tracking-[0.14em] text-[#D9C5A5]">
-                  Newsletter
+                  Boletim
                 </span>
                 <span className="mt-2 block text-sm text-white/62">
-                  Travel inspiration, delivered occasionally.
+                  Inspiração de viagem, entregue de vez em quando.
                 </span>
               </span>
               <span className="flex min-h-12 overflow-hidden rounded-md bg-white">
                 <input
                   className="min-w-0 flex-1 px-4 text-sm text-[#1D2528] outline-none"
-                  placeholder="Your email"
+                  placeholder="Seu e-mail"
                   type="email"
                 />
                 <button
                   className="inline-flex w-12 items-center justify-center bg-[#C56F4D] text-white transition-colors hover:bg-[#af5f40] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D9C5A5]"
                   type="submit"
-                  aria-label="Subscribe"
+                  aria-label="Assinar newsletter"
                 >
                   <Send className="size-4" />
                 </button>
@@ -85,8 +86,8 @@ export function Footer() {
           </form>
         </div>
         <div className="flex flex-col justify-between gap-4 pt-8 text-xs text-white/46 sm:flex-row">
-          <p>© 2026 Voyara. All rights reserved.</p>
-          <p>Journeys made unforgettable.</p>
+          <p>© 2026 {brand.name}. Todos os direitos reservados.</p>
+          <p>Jornadas feitas para serem inesquecíveis.</p>
         </div>
       </div>
     </footer>
