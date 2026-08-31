@@ -283,13 +283,6 @@ export const stats = [
   { value: 98, suffix: '%', label: 'Viajariam conosco novamente' },
 ];
 
-export const processSteps = [
-  'Conte o que inspira você.',
-  'Nós desenhamos sua jornada.',
-  'Juntos, refinamos cada detalhe.',
-  'Arrume as malas e explore.',
-];
-
 export const testimonials = [
   {
     quote:

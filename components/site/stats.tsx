@@ -6,8 +6,8 @@ import { stats } from '@/data/travel';
 
 export function Stats() {
   return (
-    <section className="bg-[#EEE7DC] py-20 sm:py-24">
-      <div className="site-container grid gap-px bg-[#D9C5A5] sm:grid-cols-2 lg:grid-cols-4">
+    <section className="bg-[#235E6F] py-20 text-white sm:py-24">
+      <div className="site-container grid gap-px bg-white/18 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
           <CounterCard key={stat.label} {...stat} />
         ))}
@@ -55,12 +55,12 @@ function CounterCard({
   }, [value]);
 
   return (
-    <div ref={ref} className="bg-[#EEE7DC] p-8 text-center">
-      <p className="font-heading text-[clamp(2.8rem,4vw,4.25rem)] font-medium leading-none text-[#123B4A]">
+    <div ref={ref} className="bg-[#235E6F] p-8 text-center">
+      <p className="font-heading text-[clamp(2.8rem,4vw,4.25rem)] font-medium leading-none text-white">
         {count.toLocaleString('pt-BR')}
         {suffix}
       </p>
-      <p className="mt-3 text-sm font-semibold uppercase tracking-[0.12em] text-[#6E7473]">
+      <p className="mt-3 text-sm font-semibold uppercase tracking-[0.12em] text-[#D9C5A5]">
         {label}
       </p>
     </div>

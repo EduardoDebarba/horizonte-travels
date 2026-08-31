@@ -6,7 +6,6 @@ import { Destinations } from '@/components/site/destinations';
 import { EditorialBanner } from '@/components/site/editorial-banner';
 import { Experiences } from '@/components/site/experiences';
 import { Footer } from '@/components/site/footer';
-import { HowItWorks } from '@/components/site/how-it-works';
 import { PlanningCta } from '@/components/site/planning-cta';
 import { Stats } from '@/components/site/stats';
 import { Testimonials } from '@/components/site/testimonials';
@@ -79,7 +78,6 @@ export default function Home() {
       <WhyUs />
       <CuratedTrips />
       <Stats />
-      <HowItWorks />
       <Testimonials />
       <TravelJournal />
       <PlanningCta />
