@@ -18,9 +18,12 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL(brand.url),
-  title: `${brand.name} | Viagens Sob Medida e Jornadas Extraordinárias`,
+  title: brand.name,
   description:
     'Descubra jornadas sob medida, destinos extraordinários e experiências de viagem inesquecíveis desenhadas ao seu redor.',
+  icons: {
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+  },
   openGraph: {
     title: `${brand.name} | Viagens Sob Medida e Jornadas Extraordinárias`,
     description:
