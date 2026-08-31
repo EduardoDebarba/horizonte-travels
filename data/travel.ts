@@ -331,6 +331,17 @@ export const journal = [
     title: '10 Lugares Escondidos Pela Costa Italiana',
     category: 'Itália',
     readTime: '8 min de leitura',
+    excerpt:
+      'Pequenas vilas, enseadas discretas e mesas à beira-mar para viver a Itália com menos pressa.',
+    body: [
+      'A costa italiana revela alguns de seus lugares mais memoráveis quando você sai do caminho mais óbvio. Entre falésias, barcos pequenos e vilas penduradas sobre o mar, há uma Itália feita para quem quer beleza sem pressa.',
+      'A melhor experiência combina hospedagens intimistas, deslocamentos bem planejados e dias com espaço para simplesmente caminhar, almoçar tarde e descobrir uma praia que não estava no mapa inicial.',
+    ],
+    highlights: [
+      'Tropea e suas águas claras na Calábria',
+      'Tellaro, uma alternativa silenciosa à Ligúria clássica',
+      'Ilhas Pontinas para dias de barco e mar aberto',
+    ],
     image:
       'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=1000&q=84',
   },
@@ -338,6 +349,17 @@ export const journal = [
     title: 'Quando Visitar o Japão',
     category: 'Japão',
     readTime: '6 min de leitura',
+    excerpt:
+      'Uma leitura sazonal para escolher entre cerejeiras, festivais, folhagens douradas e templos tranquilos.',
+    body: [
+      'O Japão muda de personalidade a cada estação. A primavera traz as cerejeiras e uma energia celebratória, enquanto o outono oferece temperaturas agradáveis, jardins dourados e uma luz especialmente bonita para fotografar.',
+      'Para uma viagem mais calma, vale considerar períodos entre grandes feriados locais. O roteiro ideal equilibra cidades intensas, noites em ryokans e pausas em templos ou jardins menos disputados.',
+    ],
+    highlights: [
+      'Primavera para hanami e primeiras viagens ao país',
+      'Outono para clima ameno e paisagens douradas',
+      'Inverno para onsen, neve e uma atmosfera contemplativa',
+    ],
     image:
       'https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1000&q=84',
   },
@@ -345,6 +367,17 @@ export const journal = [
     title: 'Um Guia Para Viajar Devagar em Portugal',
     category: 'Portugal',
     readTime: '7 min de leitura',
+    excerpt:
+      'Rotas com tempo para vinhos, vilarejos, hotéis de charme e conversas que viram memória.',
+    body: [
+      'Portugal recompensa quem viaja em outro ritmo. Em vez de tentar atravessar o país inteiro em poucos dias, a experiência fica mais rica quando cada região ganha tempo suficiente para revelar seus mercados, mirantes e mesas familiares.',
+      'Uma rota bem desenhada pode combinar Lisboa, Alentejo e Douro, alternando cidade, campo e vinho sem transformar a viagem em uma lista de deslocamentos.',
+    ],
+    highlights: [
+      'Lisboa com bairros caminháveis e gastronomia autoral',
+      'Alentejo para hospedagens rurais e céu aberto',
+      'Douro para vinícolas, barcos e estradas panorâmicas',
+    ],
     image:
       'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1000&q=84',
   },
