@@ -4,8 +4,6 @@ import { Calendar, MapPin, Search, Sparkles, Users } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { useState } from 'react';
 
-import { ActionButton } from './action-button';
-
 const experiences = ['Refúgio de Praia', 'Cultura', 'Aventura', 'Romance', 'Bem-estar'];
 
 export function TripFinder() {
@@ -60,10 +58,13 @@ export function TripFinder() {
           ))}
         </select>
       </TripField>
-      <ActionButton className="w-full md:w-auto" type="submit" variant="secondary">
-        <Search className="size-4" />
+      <button
+        className="group inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-md bg-[#C56F4D] px-6 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#af5f40] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C56F4D] md:w-auto"
+        type="submit"
+      >
         Explorar Viagens
-      </ActionButton>
+        <Search className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+      </button>
       <p
         aria-live="polite"
         className="text-sm text-[#235E6F] md:col-span-full"

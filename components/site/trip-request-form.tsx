@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle2, Send, XCircle } from 'lucide-react';
+import { CheckCircle2, XCircle } from 'lucide-react';
 import { useState } from 'react';
 
 import { brand } from '@/data/travel';
@@ -116,7 +116,6 @@ export function TripRequestForm() {
 
             <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <ActionButton type="submit" variant="primary">
-                <Send className="size-4" />
                 {status === 'loading' ? 'Planejando...' : 'Começar Planejamento'}
               </ActionButton>
               <p className="min-h-6 text-sm" aria-live="polite">
