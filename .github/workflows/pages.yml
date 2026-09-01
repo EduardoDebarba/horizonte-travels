@@ -36,19 +36,7 @@ jobs:
           GITHUB_PAGES: 'true'
 
       - name: Assemble Pages artifact
-        run: |
-          rm -rf gh-pages
-          mkdir -p gh-pages
-          cp -R dist/client/. gh-pages/
-          cp -R dist/server/prerendered-routes/. gh-pages/
-          rm -rf gh-pages/static
-          mkdir -p gh-pages/static
-          cp -R dist/client/_next/static/. gh-pages/static/
-          rm -rf gh-pages/_next
-          find gh-pages -type f \( -name '*.html' -o -name '*.rsc' -o -name '*.js' -o -name '*.css' \) -exec perl -0pi -e 's#/horizonte-travels/_next/static/#/horizonte-travels/static/#g; s#/_next/static/#/horizonte-travels/static/#g; s#(href|src)="/(?!horizonte-travels/)#$1="/horizonte-travels/#g; s#url\(/(?!horizonte-travels/)#url\(/horizonte-travels/#g' {} +
-          test -f gh-pages/index.html
-          test -n "$(find gh-pages/static/css -name '*.css' -print -quit)"
-          touch gh-pages/.nojekyll
+        run: npm run prepare:pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
