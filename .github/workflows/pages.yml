@@ -41,7 +41,8 @@ jobs:
           mkdir -p gh-pages
           cp -R dist/client/. gh-pages/
           cp -R dist/server/prerendered-routes/. gh-pages/
-          perl -0pi -e 's/(href|src)="\/(?!horizonte-travels\/)/$1="\/horizonte-travels\//g; s/url\(\/(?!horizonte-travels\/)/url\(\/horizonte-travels\//g' gh-pages/*.html gh-pages/*.rsc
+          mv gh-pages/_next gh-pages/assets
+          perl -0pi -e 's#/horizonte-travels/_next/#/horizonte-travels/assets/#g; s#/_next/#/horizonte-travels/assets/#g; s#(href|src)="/(?!horizonte-travels/)#$1="/horizonte-travels/#g; s#url\(/(?!horizonte-travels/)#url\(/horizonte-travels/#g' gh-pages/*.html gh-pages/*.rsc
           touch gh-pages/.nojekyll
 
       - name: Upload artifact
